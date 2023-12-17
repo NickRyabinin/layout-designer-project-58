@@ -72,6 +72,7 @@ body {
 
   font-family: "Open Sans", sans-serif;
   font-size: var(--normal);
+  font-weight: 400;
   line-height: 1.6em;
   color: var(--dark);
 }
@@ -88,6 +89,7 @@ h3 {
 
 h1 {
   font-size: var(--large);
+  font-weight: 400;
 }
 
 h2 {
@@ -114,6 +116,10 @@ h3 {
   content: "";
 }
 
+.bg-plain-light {
+  background-color: var(--light);
+}
+
 /** SECTION **/
 
 .section {
@@ -135,6 +141,39 @@ h3 {
 /** TEXT **/
 
 .columns-2 {
-  column-count: 2;
-	column-gap: 30px;
+  display: flex;
+  flex-shrink: 0;
+  column-gap: 30px;
+}
+
+.flex-column {
+  width: 50%;
+}
+
+.header-text-margin {
+  margin-bottom: 40px;
+}
+
+/** HEADERS **/
+
+.header-title {
+  margin-bottom: 185px;
+}
+
+/** BUTTONS **/
+
+.btn-header {
+  text-decoration: none;
+  background-color: var(--main);
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-header:hover {
+  background-color: #ea7600;
 }
