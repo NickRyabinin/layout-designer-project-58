@@ -219,8 +219,12 @@ header {
   margin-top: 20px;
 }
 
-.nav-card-width {
+.nav-header-width {
   flex: 0 0 350px;
+}
+
+.nav-card-width {
+  flex: 0 0 302px;
 }
 
 .nav-card-height-1-row {
@@ -244,10 +248,32 @@ header {
 
 .nav-card {
   background-color: var(--light);
+  padding: 24px;
+}
+
+.nav-card a {
   text-decoration: none;
+  color: var(--dark);
+}
+
+.nav-card h3 {
+  color: var(--main);
+}
+
+.nav-card:hover {
+  background-color: var(--main);
+}
+
+.nav-card:hover a {
+  color: var(--white);
+}
+
+.nav-card:hover h3 {
+  color: var(--white);
 }
 
 .nav-number {
+  display: inline-block;
   margin-bottom: 40px;
   font-size: 64px;
   font-family: Neucha, sans-serif;
