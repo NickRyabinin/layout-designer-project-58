@@ -10,10 +10,13 @@
   --semitransparent-dark: #908d8b;
   --brown: #b09a81;
   --cyan: #1085c5;
-  --normal: 16px;
-  --large: 72px;
-  --medium: 60px;
-  --small: 34px;
+  --font-large: 34px;
+  --font-medium: 24px;
+  --font-normal: 16px;
+  --header-large: 72px;
+  --header-medium: 60px;
+  --header-small: 34px;
+  --header-tiny: 14px;
 }
 
 /** COLORS **/
@@ -57,7 +60,7 @@
 /** FONTS **/
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open_Sans";
   src: url("../assets/fonts/Open_Sans/OpenSans-Regular.ttf");
 }
 
@@ -70,8 +73,8 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", sans-serif;
-  font-size: var(--normal);
+  font-family: "Open_Sans", sans-serif;
+  font-size: var(--font-normal);
   font-weight: 400;
   line-height: 1.6em;
   color: var(--dark);
@@ -89,15 +92,59 @@ h3 {
 }
 
 h1 {
-  font-size: var(--large);
+  font-size: var(--header-large);
 }
 
 h2 {
-  font-size: var(--medium);
+  font-size: var(--header-medium);
 }
 
 h3 {
-  font-size: var(--small);
+  font-size: var(--header-small);
+}
+
+h6 {
+  padding: 5px 10px;
+  font-family: "Open_Sans", sans-serif;
+  font-size: var(--header-tiny);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+/** INDENTATIONS **/
+
+.m-0 {
+  margin: 0;
+}
+
+.mtp-0 {
+  margin-top: 0;
+}
+
+.mtp-30 {
+  margin-top: 30px;
+}
+
+.mtp-100 {
+  margin-top: 100px;
+}
+
+.mbm-20 {
+  margin-bottom: 20px;
+}
+
+.mbm-30 {
+  margin-bottom: 30px;
+}
+
+.plt-23 {
+  padding-left: 23px;
+}
+
+.plt-30 {
+  padding-left: 30px;
 }
 
 /** BACKGROUND **/
@@ -127,6 +174,10 @@ h3 {
   background-color: var(--main-dark);
 }
 
+.bg-plain-brown {
+  background-color: var(--brown);
+}
+
 /** CONTAINER **/
 
 .container {
@@ -150,12 +201,18 @@ header {
   height: 525px;
 }
 
+.ikea-effect-img {
+  position: relative;
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
 /** TEXT **/
 
 .columns-2 {
   display: flex;
   flex-shrink: 0;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .flex-column {
@@ -164,11 +221,19 @@ header {
 
 .video-section-text {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .header-text-margin {
   margin-bottom: 40px;
+}
+
+.section-text-lg {
+  color: var(--dark);
+  font-family: Neucha, sans-serif;
+  font-size: var(--font-large);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2em;
 }
 
 /** HEADERS **/
@@ -180,6 +245,15 @@ header {
 .video-header {
   margin-bottom: 30px;
   text-align: center;
+}
+
+.pseudo-header {
+  font-family: Neucha, sans-serif;
+  font-size: var(--font-medium);
+  color: var(--semitransparent-dark);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2em;
 }
 
 /** BUTTONS **/
