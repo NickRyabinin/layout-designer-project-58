@@ -11,6 +11,7 @@
   --brown: #b09a81;
   --cyan: #1085c5;
   --btn-hover: #ea7600;
+  --black: #000;
   --font-large: 34px;
   --font-medium: 24px;
   --font-above-normal: 18px;
@@ -59,6 +60,10 @@
 
 .color-cyan {
   color: var(--cyan);
+}
+
+.color-black {
+  color: var(--black);
 }
 
 /** BACKGROUND **/
@@ -255,6 +260,10 @@ input {
   padding: 0 0 0 15px;
   border: 0;
   outline: none;
+}
+
+.no-decoration {
+  text-decoration: none;
 }
 
 /** IMAGES **/
